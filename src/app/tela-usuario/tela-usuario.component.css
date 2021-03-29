@@ -57,6 +57,13 @@ color:#3b5998;
    background-color: white;
 }
 
+.meiocard{
+    background-color:#F6BD60;
+}
+
+.ladocard{
+    background-color:#F7EDE2;
+}
 
 /* caixa de pesquisa */
 #busca{
@@ -98,4 +105,11 @@ espaçamento do primerio menu
 */
 
 /* /topo das paginas*/
+
+.margem-card{
+   
+    margin-bottom: 30px;
+}
+
+
 

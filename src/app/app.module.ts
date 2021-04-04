@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
 import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
 import { TelaFavoritosComponent } from './tela-favoritos/tela-favoritos.component';
@@ -18,6 +19,7 @@ import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
     AppComponent,
     MenuComponent,
     RodapeComponent,
+    ComoFuncionaComponent,
     TelaUsuarioComponent,
     TelaProdutosComponent,
     TelaFavoritosComponent,

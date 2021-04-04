@@ -50,18 +50,11 @@ color:#3b5998;
     font-style: normal; /*caso queira deixar alterar o estilo da fonte*/
     font-size: 0.95rem; /*caso queira alterar o tamanho da fonte*/
     font-family: 'Roboto', sans-serif; /*caso queira mudar o tipo de fonte*/
+    color: #84A59D;
  
  }
 
- .regua{
-   
- padding-right: 35px;
-    
-    
- }
-
- .medida{
-     padding-left: 29px;
- }
+ 
+ 
 
  

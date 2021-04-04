@@ -53,9 +53,7 @@ color:#3b5998;
 
 
 
-.card-body{
-   background-color: white;
-}
+
 
 
 /* caixa de pesquisa */
@@ -88,10 +86,7 @@ color:#3b5998;
 /*
 espaçamento do primerio menu
 */
-.espaco{
-    padding-inline-end: 158px;
-    padding-inline-start: 20px;
-}
+
 
 /*
 /espaçamento do primerio menu
@@ -99,3 +94,16 @@ espaçamento do primerio menu
 
 /* /topo das paginas*/
 
+.espaco{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 6px 
+}
+
+.posicao{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 2px 
+}

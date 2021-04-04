@@ -6,6 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { AlterarcadastroComponent } from './alterarcadastro/alterarcadastro.component';
+import { AlterarprodutoComponent } from './alterarproduto/alterarproduto.component';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { CardComponent } from './card/card.component';
+import { CriarprodutoComponent } from './criarproduto/criarproduto.component';
 import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
 import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
@@ -19,6 +24,11 @@ import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
     AppComponent,
     MenuComponent,
     RodapeComponent,
+    AlterarcadastroComponent,
+    AlterarprodutoComponent,
+    CadastrarComponent,
+    CardComponent,
+    CriarprodutoComponent,
     ComoFuncionaComponent,
     TelaUsuarioComponent,
     TelaProdutosComponent,
@@ -26,7 +36,7 @@ import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
     CorpoHomeComponent,
     NossoTimeComponent,
     PopUpLoginComponent
-  ],
+ ],
   imports: [
     BrowserModule,
     AppRoutingModule,

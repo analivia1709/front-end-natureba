@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,6 +11,13 @@ import { AlterarprodutoComponent } from './alterarproduto/alterarproduto.compone
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { CardComponent } from './card/card.component';
 import { CriarprodutoComponent } from './criarproduto/criarproduto.component';
+import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
+import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
+import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
+import { TelaFavoritosComponent } from './tela-favoritos/tela-favoritos.component';
+import { CorpoHomeComponent } from './corpo-home/corpo-home.component';
+import { NossoTimeComponent } from './nosso-time/nosso-time.component';
+import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +28,19 @@ import { CriarprodutoComponent } from './criarproduto/criarproduto.component';
     AlterarprodutoComponent,
     CadastrarComponent,
     CardComponent,
-    CriarprodutoComponent
-  ],
+    CriarprodutoComponent,
+    ComoFuncionaComponent,
+    TelaUsuarioComponent,
+    TelaProdutosComponent,
+    TelaFavoritosComponent,
+    CorpoHomeComponent,
+    NossoTimeComponent,
+    PopUpLoginComponent
+ ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

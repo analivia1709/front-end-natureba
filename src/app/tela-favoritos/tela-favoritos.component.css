@@ -1,0 +1,29 @@
+
+.btn-primary{
+    background-color: #F28482;
+    border-color: #F28482;
+    color: #FFFFFF;
+    height: 42px;
+    width: 230px;
+    left: 752px;
+    top: 886px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card-body{
+    background: #F6BD60;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.cor{
+    color: #84A59D;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+
+

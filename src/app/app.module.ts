@@ -10,6 +10,8 @@ import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
 import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
 import { TelaFavoritosComponent } from './tela-favoritos/tela-favoritos.component';
 import { CorpoHomeComponent } from './corpo-home/corpo-home.component';
+import { NossoTimeComponent } from './nosso-time/nosso-time.component';
+import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CorpoHomeComponent } from './corpo-home/corpo-home.component';
     TelaUsuarioComponent,
     TelaProdutosComponent,
     TelaFavoritosComponent,
-    CorpoHomeComponent
+    CorpoHomeComponent,
+    NossoTimeComponent,
+    PopUpLoginComponent
   ],
   imports: [
     BrowserModule,

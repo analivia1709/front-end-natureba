@@ -1,0 +1,213 @@
+/*pagina do Nosso Time*/
+
+ul.social-networks li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+    
+
+}
+
+ul.social-networks{
+    list-style: none;
+       padding: 0;
+       
+}
+
+.fa{
+    font-size: 15pt;
+    color: black;
+    padding:5px;
+    }
+
+
+.fa-facebook-square:hover{
+color:#3b5998;
+
+}
+
+.fa-instagram:hover{
+    color:#C13584;
+    }
+
+.fa-twitter-square:hover{
+    color:#143c91;
+    }
+
+.fa-linkedin:hover{
+color:#007dbb;
+
+}
+
+.fa-github-alt:hover{
+    color:#F5CAC3;
+    }
+
+    
+
+ .fa-heart-o:hover{
+    color: darkred;
+ }
+
+.altera-menu {
+    font-style: normal; /*caso queira deixar alterar o estilo da fonte*/
+    font-size: 1.1rem; /*caso queira alterar o tamanho da fonte*/
+    font-family: Roboto, sans-serif; /*caso queira mudar o tipo de fonte*/
+    
+ }
+
+ .cor{
+    color: #84A59D;
+}
+
+/* caixa de pesquisa */
+#busca{
+    background-color: white;
+    border:initial;
+    width: 300px;
+    float: left;
+    border:0;
+}
+
+#txtBusca{
+    float: left;
+    background-color: white;
+    padding-left: 5px;
+    font-style:initial;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 260px;
+    font-family:sans-serif;
+}
+
+/* caixa de pesquisa */
+/*
+/PAGINA INICIAL
+*/
+
+/*imagem do Integrande*/
+
+/*Card do Nosso Time*/
+.br-50{
+    border-radius:50%;
+}
+
+.p-30{
+    padding: 10px;
+}
+/*imagem 3D*/
+.flipper{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.flip-container:hover .flipper{
+    transform: rotateY(180deg);
+
+}
+.flipper{
+    width: 40%;
+    height: 40%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+       
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+/*borda do Card*/
+.borda {
+    margin:10px;
+    margin-bottom: 10px;
+    left: 40px;
+    background: #FFFFFF;
+    box-decoration-break: clone;    
+        
+ 
+}
+
+.tm-icones{
+    position:static;
+    width: 36px;
+    height: 36px;
+    left: 100px;
+    top:100px;
+}
+
+    
+
+    .ul-social-network{
+        list-style: none;
+        display:flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items:center;
+        
+    }
+    .tm-fa{
+        font-size: 35pt;
+        padding: 35px;
+    }
+    .infoTime{
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50px;
+      
+        
+        
+    }
+    /*nome do Integrante*/
+    .center {
+        position:relative;
+        top: 10%;
+        width: 135%;
+        text-align: center;
+        font-size: 38px;
+        color: #84A59D;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 53px;
+      }
+
+      /*texto de cada Integrante */
+      .infoTexto{
+          color:  #84A59D;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          margin-top: 90px;
+          
+      }
+
+      .infoTexto1{
+        color:  #84A59D;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+      }
+
+.txtCor{
+    color: #84A59D;
+    
+}
+.imgpos{
+    position: absolute;
+    bottom: 50px;
+    top: 0;
+}

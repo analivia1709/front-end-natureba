@@ -1,8 +1,9 @@
 import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
@@ -18,6 +19,7 @@ import { TelaFavoritosComponent } from './tela-favoritos/tela-favoritos.componen
 import { CorpoHomeComponent } from './corpo-home/corpo-home.component';
 import { NossoTimeComponent } from './nosso-time/nosso-time.component';
 import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

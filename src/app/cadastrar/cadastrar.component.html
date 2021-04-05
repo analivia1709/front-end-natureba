@@ -1,0 +1,67 @@
+<!-- formulario cadastro-->
+
+<head >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class='container fonte'>
+     
+        <div class=" card" >
+            <h1> Cadastre-se </h1>
+
+            <div class='label-float d-flex justify-content-center'>
+                <input [(ngModel)]='usuarioLogin.nomeCompletoUsuario' type="text" id="nome" placeholder="" required>
+                <label for="nome">Nome completo*</label>
+
+            </div>
+
+            <div class="label-float d-flex justify-content-center">
+                <input [(ngModel)]='usuarioLogin.nomeSocial' type="text" id="nomeSocial" placeholder="" required>
+                <label for="nomeSocial">Nome social</label>
+
+            </div>
+
+            <div class="label-float d-flex justify-content-center">
+                <input [(ngModel)]='usuarioLogin.dataAniversario' type="text" id="dataDeNascimento" placeholder="" required>
+                <label for="dataDenNscimento">Data de nascimento*</label>
+
+            </div>
+
+            <div class="label-float d-flex justify-content-center">
+                <input [(ngModel)]='usuarioLogin.cpf'type="text" id="cpf" placeholder="" required>
+                <label for="cpf">CPF*</label>
+
+            </div>
+
+            <div class="label-float d-flex justify-content-center">
+                <input [(ngModel)]='usuarioLogin.emailUsuario' type="text" id="email" placeholder="" required>
+                <label for="email">E-mail*</label>
+
+            </div>
+
+            <div class="label-float d-flex justify-content-center">
+                <input type="text" id="senha" placeholder="" required>
+                <label for="senha">Senha*</label>
+            </div>
+
+            <div class="label-float d-flex justify-content-center">
+                <input [(ngModel)]='usuarioLogin.senhaUsuario' type="text" id="confirmeSenha" placeholder="" required>
+                <label for="confirmeSenha">Confirme sua senha*</label>
+
+            </div>
+
+            <div class="label-float d-flex justify-content-end ">
+                <button>Finalizar cadastro</button>
+            </div>
+         
+        </div>
+    </div>
+
+     <!-- /formulario cadastro-->   
+ </body>
+
+
+
+

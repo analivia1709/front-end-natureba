@@ -9,6 +9,8 @@ import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
 import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
 import { TelaFavoritosComponent } from './tela-favoritos/tela-favoritos.component';
 import { CorpoHomeComponent } from './corpo-home/corpo-home.component';
+import { MinhasComprasComponent } from './minhas-compras/minhas-compras.component';
+import { CategoriasComponent } from './categorias/categorias.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CorpoHomeComponent } from './corpo-home/corpo-home.component';
     TelaUsuarioComponent,
     TelaProdutosComponent,
     TelaFavoritosComponent,
-    CorpoHomeComponent
+    CorpoHomeComponent,
+    MinhasComprasComponent,
+    CategoriasComponent
   ],
   imports: [
     BrowserModule,

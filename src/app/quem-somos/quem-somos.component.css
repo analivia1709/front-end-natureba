@@ -1,0 +1,74 @@
+.card-body{
+   background-color:  white ;
+}
+
+/*CONTEUDO DO CARD*/
+.card {
+  
+  background-color: white; 
+  padding: 80px;
+  box-shadow: 3px 3px 1px 0px #84A59D; 
+  width: 900px; 
+  Height: 900px;
+  left: 0px; 
+  top: 100px;
+  
+}
+
+/*FIM DO CONTEUDO DO CARD*/
+
+.body{
+
+min-height: 1200px;
+background-color : #F7EDE2;
+background-repeat: no-repeat; 
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+.gif{
+    height:500px ;
+    width: 500px ;
+}
+
+.h1-titulo{
+    font-family:Roboto ;
+    color:#84A59D ;
+}
+
+.textinho{
+    font-family:Roboto ;
+    color:#84A59D ;
+    font-size: 1.2rem;
+
+}
+
+.esp-1{
+    font: bolder;
+    line-height: 18,75px;
+    font-size: 16px;
+    color: white;
+  
+  }
+
+  .tamanho{
+      margin: 0%;
+      padding: auto;
+  }
+
+
+.config{
+    font-family: 'Roboto', sans-serif; 
+    text-align: justify;
+    font-style: normal;
+    
+}
+
+.p{
+    margin-top: 10;
+    border-radius: 0px;
+    top: 886px;
+    font-weight: bold;
+}
+

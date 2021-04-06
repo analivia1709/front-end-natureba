@@ -17,8 +17,12 @@ import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
 import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
 import { TelaFavoritosComponent } from './tela-favoritos/tela-favoritos.component';
 import { CorpoHomeComponent } from './corpo-home/corpo-home.component';
+import { MinhasComprasComponent } from './minhas-compras/minhas-compras.component';
+import { CategoriasComponent } from './categorias/categorias.component';
 import { NossoTimeComponent } from './nosso-time/nosso-time.component';
 import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
+import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
+
 
 
 @NgModule({
@@ -36,9 +40,13 @@ import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
     TelaProdutosComponent,
     TelaFavoritosComponent,
     CorpoHomeComponent,
+    MinhasComprasComponent,
+    CategoriasComponent,
     NossoTimeComponent,
-    PopUpLoginComponent
+    PopUpLoginComponent,
+    MenuLogadoComponent
  ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,

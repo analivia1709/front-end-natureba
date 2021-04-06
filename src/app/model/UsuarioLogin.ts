@@ -4,6 +4,7 @@ export class UsuarioLogin{
     public cpf: string;
     public nomeSocial: string;
     public nomeCompletoUsuario: string;
+    public nomeUsuario: string;
     public dataAniversario: string;
     public emailUsuario: string;
     public senhaUsuario: string;

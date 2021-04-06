@@ -21,6 +21,7 @@ import { MinhasComprasComponent } from './minhas-compras/minhas-compras.componen
 import { CategoriasComponent } from './categorias/categorias.component';
 import { NossoTimeComponent } from './nosso-time/nosso-time.component';
 import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
+import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 
 
 
@@ -42,7 +43,8 @@ import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
     MinhasComprasComponent,
     CategoriasComponent,
     NossoTimeComponent,
-    PopUpLoginComponent
+    PopUpLoginComponent,
+    MenuLogadoComponent
  ],
 
   imports: [

@@ -6,6 +6,8 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 import { CorpoHomeComponent } from './corpo-home/corpo-home.component';
 import { CriarprodutoComponent } from './criarproduto/criarproduto.component';
+import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
+import { MinhasComprasComponent } from './minhas-compras/minhas-compras.component';
 import { NossoTimeComponent } from './nosso-time/nosso-time.component';
 import { TelaFavoritosComponent } from './tela-favoritos/tela-favoritos.component';
 import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
@@ -23,7 +25,9 @@ const routes: Routes = [
   {path: 'nossoTime', component: NossoTimeComponent},
   {path: 'telaFavoritos', component: TelaFavoritosComponent},
   {path: 'telaProdutos', component: TelaProdutosComponent},
-  {path: 'telaUsuario', component: TelaUsuarioComponent}
+  {path: 'telaUsuario', component: TelaUsuarioComponent},
+  {path: 'minhasCompras', component: MinhasComprasComponent},
+  {path: 'logado', component: MenuLogadoComponent}
   
 ];
 

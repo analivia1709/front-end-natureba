@@ -12,48 +12,48 @@
             <h1> Cadastre-se </h1>
 
             <div class='label-float d-flex justify-content-center'>
-                <input [(ngModel)]='usuarioLogin.nomeCompletoUsuario' type="text" id="nome" placeholder="" required>
+                <input [(ngModel)]='usuario.nomeCompletoUsuario' type="text" id="nome" placeholder="" required>
                 <label for="nome">Nome completo*</label>
 
             </div>
 
             <div class="label-float d-flex justify-content-center">
-                <input [(ngModel)]='usuarioLogin.nomeSocial' type="text" id="nomeSocial" placeholder="" required>
+                <input [(ngModel)]='usuario.nomeSocial' type="text" id="nomeSocial" placeholder="" required>
                 <label for="nomeSocial">Nome social</label>
 
             </div>
 
             <div class="label-float d-flex justify-content-center">
-                <input [(ngModel)]='usuarioLogin.dataAniversario' type="text" id="dataDeNascimento" placeholder="" required>
+                <input [(ngModel)]='usuario.dataAniversario' type="text" id="dataDeNascimento" placeholder="" required>
                 <label for="dataDenNscimento">Data de nascimento*</label>
 
             </div>
 
             <div class="label-float d-flex justify-content-center">
-                <input [(ngModel)]='usuarioLogin.cpf'type="text" id="cpf" placeholder="" required>
+                <input [(ngModel)]='usuario.cpf'type="text" id="cpf" placeholder="" required>
                 <label for="cpf">CPF*</label>
 
             </div>
 
             <div class="label-float d-flex justify-content-center">
-                <input [(ngModel)]='usuarioLogin.emailUsuario' type="text" id="email" placeholder="" required>
+                <input [(ngModel)]='usuario.emailUsuario' type="text" id="email" placeholder="" required>
                 <label for="email">E-mail*</label>
 
             </div>
 
             <div class="label-float d-flex justify-content-center">
-                <input type="text" id="senha" placeholder="" required>
+                <input (input)='confirmSenha($event)' type="text" id="senha" placeholder="" required>
                 <label for="senha">Senha*</label>
             </div>
 
             <div class="label-float d-flex justify-content-center">
-                <input [(ngModel)]='usuarioLogin.senhaUsuario' type="text" id="confirmeSenha" placeholder="" required>
+                <input [(ngModel)]='usuario.senhaUsuario' type="text" id="confirmeSenha" placeholder="" required>
                 <label for="confirmeSenha">Confirme sua senha*</label>
 
             </div>
 
             <div class="label-float d-flex justify-content-end ">
-                <button>Finalizar cadastro</button>
+                <button (click)='cadastrar()' >Finalizar cadastro</button>
             </div>
          
         </div>

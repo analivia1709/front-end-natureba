@@ -3,6 +3,7 @@ import { Produto } from "./Produto";
 export class Usuario{
     public cpf: string;
     public nomeSocial: string;
+    public nomeUsuario: string
     public nomeCompletoUsuario: string;
     public dataAniversario: Date;
     public emailUsuario: string;

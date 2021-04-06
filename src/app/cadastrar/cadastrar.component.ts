@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuarioLogin } from '../model/UsuarioLogin';
+import { Router } from '@angular/router';
+import { Usuario } from '../model/Usuario';
+import { AuthService } from '../service/auth.service';
+
 
 @Component({
   selector: 'app-cadastrar',
@@ -8,15 +11,29 @@ import { UsuarioLogin } from '../model/UsuarioLogin';
 })
 export class CadastrarComponent implements OnInit {
 
-  usuarioLogin: UsuarioLogin = new UsuarioLogin
+  usuario: Usuario = new Usuario
+  confirmarSenha: string
 
-  constructor() { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
     window.scroll(0,0)
   }
 
   confirmSenha(event: any){
+    this.confirmarSenha = event.target.value
+  }
 
+  cadastrar() {
+    if(this.usuario.senhaUsuario != this.confirmarSenha){
+      alert('As senhas não conferem.')
+    }
+    else{
+      this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
+        this.usuario = resp
+        this.router.navigate(['/paginaInicial'])
+        alert('Bem-vinde a nossa Ecovila!')
+      })
+    }
   }
 }

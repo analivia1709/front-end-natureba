@@ -114,7 +114,7 @@ espaçamento do primerio menu
 espaçamento do primerio menu
 
 */
-.estiloDoPopUp{
+estiloDoPopUp{
     background-color: #F7EDE2;
     background-repeat: no-repeat;
     background-size: cover;
@@ -175,7 +175,8 @@ h1{
     transition: all .3s ease-out;
 }
 
-.label-float input:focus + label{
+.label-float input:focus + label,
+.label-float input:valid + label{
     font-size: 13px;
     margin-top: 0;
     color:#84A59D;
@@ -197,7 +198,7 @@ h1{
 
 .bt-entrar:hover{
     background-color:#ffff;
-    color: #F28482;
+    color: hsl(1, 81%, 73%);
 }
 
 .justify-center{
@@ -205,22 +206,18 @@ h1{
     justify-content: center;
 }
 
-.textEsqueceu{
-    color: #84A59D;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s ease-out;
-}
-
-.textEsqueceu:hover{
-    color: #F28482;
-}
-
 hr{
     margin-top: 10%;
     margin-bottom: 10%;
     width: 100%;
     border: 1px solid #000000;
-
 }
+
+.modal-dialog{
+    max-width: 30%; 
+    margin: 0 auto !important; 
+ }
+
+ .modal-body{
+    background-color: #F7EDE2;
+ }

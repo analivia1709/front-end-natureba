@@ -22,10 +22,6 @@ export class AuthService {
     return this.http.post<Usuario>('http://localhost:8080/usuario/cadastrar', usuario)
   }
 
-  cadastrarProduto(produto: Produto) {
-    return this.http.post<Produto>('http://localhost:8080/produto/cadastrarProduto', produto)
-  }
-
   logado() {
     let ok: boolean = false
 

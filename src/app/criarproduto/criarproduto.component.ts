@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Produto } from '../model/Produto';
 import { Usuario } from '../model/Usuario';
-import { AuthService } from '../service/auth.service';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-criarproduto',
@@ -16,7 +16,7 @@ export class CriarprodutoComponent implements OnInit {
   produto: Produto = new Produto
   
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private produtoService: ProdutoService, private router: Router) { }
 
   ngOnInit() {
     window.scroll(0,0)
@@ -24,7 +24,7 @@ export class CriarprodutoComponent implements OnInit {
 
   criarProduto() {
     
-    this.authService.cadastrarProduto(this.produto).subscribe((resp: Produto) => {
+    this.produtoService.criarProdutoPorUsuario(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
       this.router.navigate(['/meusProdutos'])
       alert('Parabéns pelo novo produto!')

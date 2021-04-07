@@ -14,7 +14,7 @@ import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
 import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'corpoHome', pathMatch: 'full'},
+  {path: '', redirectTo: 'paginaInicial', pathMatch: 'full'},
 
   {path:'alterarCadastro', component: AlterarcadastroComponent},
   {path:'alterarProduto', component: AlterarprodutoComponent},
@@ -23,9 +23,9 @@ const routes: Routes = [
   {path: 'paginaInicial', component: CorpoHomeComponent},
   {path: 'criarProduto', component: CriarprodutoComponent},
   {path: 'nossoTime', component: NossoTimeComponent},
-  {path: 'telaFavoritos', component: TelaFavoritosComponent},
-  {path: 'telaProdutos', component: TelaProdutosComponent},
-  {path: 'telaUsuario', component: TelaUsuarioComponent},
+  {path: 'meusFavoritos', component: TelaFavoritosComponent},
+  {path: 'meusProdutos', component: TelaProdutosComponent},
+  {path: 'minhaPagina', component: TelaUsuarioComponent},
   {path: 'minhasCompras', component: MinhasComprasComponent},
   {path: 'logado', component: MenuLogadoComponent}
   

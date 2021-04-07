@@ -149,7 +149,7 @@ h1{
     font-weight: bold;
 }
 
-.btn-secondary{
+.adapt{
     background-color: transparent;
     border-color: transparent;
     color: #84A59D;
@@ -159,5 +159,8 @@ h1{
     top: 886px;
     border-radius: 5px;
     font-weight: bold;
+
 }
+
+
 

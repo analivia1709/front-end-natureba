@@ -22,6 +22,8 @@ import { CategoriasComponent } from './categorias/categorias.component';
 import { NossoTimeComponent } from './nosso-time/nosso-time.component';
 import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
 import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
+import { PaginaProdutoComponent } from './pagina-produto/pagina-produto.component';
+import { PaginaProdutoVendedorComponent } from './pagina-produto-vendedor/pagina-produto-vendedor.component';
 
 
 
@@ -44,7 +46,9 @@ import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
     CategoriasComponent,
     NossoTimeComponent,
     PopUpLoginComponent,
-    MenuLogadoComponent
+    MenuLogadoComponent,
+    PaginaProdutoComponent,
+    PaginaProdutoVendedorComponent
  ],
 
   imports: [

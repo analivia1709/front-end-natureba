@@ -5,41 +5,41 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class=" text-white nav-link" href="#como">Como Funciona? <span class="sr-only">(current)</span></a>
+    <a class=" text-white nav-link" routerLink='comoFunciona'>Como Funciona? <span class="sr-only">(current)</span></a>
     <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
         <ul class=" navbar-nav d-flex espaco align-items-center ">
             <li class="nav-item active">
             </li>
 
             <li class="nav-item">
-                <a class=" text-white nav-link" href="#sobre">Sobre nós</a>
+                <a class=" text-white nav-link" routerLink='sobreNos'>Sobre nós</a>
             </li>
 
             <li class="nav-item">
-                <a class=" text-white nav-link" href="#time">Nosso time</a>
+                <a class=" text-white nav-link" routerLink='nossoTime'>Nosso time</a>
             </li>
 
             <li class="nav-item">
-                <a class=" text-white nav-link" href="#contato">Contato</a>
+                <a class=" text-white nav-link" routerLink='contato'>Contato</a>
             </li>
         </ul>
 
         <ul class=" navbar-nav ml-auto d-flex align-items-center">
 
             <li>
-                <a href="https://www.facebook.com/" target="_blank" class="icoFacebook">
+                <a href="https://www.facebook.com/" target="_blank" class="icoFacebook" alt='Icone do Facebook'>
                     <i class=" fa fa-facebook-square" aria-hidden="true"></i>
                 </a>
             </li>
 
             <li>
-                <a href="https://www.instagram.com/" target="_blank" class="icoInstagram">
+                <a href="https://www.instagram.com/" target="_blank" class="icoInstagram" alt='Icone do instagram'>
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
             </li>
 
             <li>
-                <a href="https://www.twitter.com/" target="_blank" class="icoTwitter">
+                <a href="https://www.twitter.com/" target="_blank" class="icoTwitter" alt='Icone do twitter'>
                     <i class="fa fa-twitter-square" aria-hidden="true"></i>
                 </a>
             </li>
@@ -55,7 +55,7 @@
 <!--logo-->
 
 <div class=" d-flex justify-content-center">
-    <img src="https://i.imgur.com/qK0vDVm.jpg" width="250" height="260" alt="logotipo">
+    <img src="https://i.imgur.com/qK0vDVm.jpg" width="250" height="260" alt="Logotipo Natureba">
 
 </div>
 
@@ -81,16 +81,13 @@
     <div class=" collapse navbar-collapse " id="conteudoNavbarSuportado">
         <ul class="navbar-nav cor altera-menu posicao ">
 
-
-
-
             <li class="nav-item">
                 <a class="  nav-link" href="#ofertas">Baratinhos</a>
             </li>
 
 
             <li class="nav-item">
-                <a class="  nav-link" href="#maquiagem">Maquiagem</a>
+                <a class="nav-link" href="#maquiagem">Maquiagem</a>
             </li>
 
             <li class="nav-item">
@@ -134,52 +131,58 @@
     
     <div class="modal fade" id="ExemploModalCentralizado"> 
         <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body" >
-                        <div>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-          <!--fechamento X--> <span aria-hidden="true">&times;</span> <!--/fechamento X-->
-                            </button>
+
+            <div class="modal-content">
+                <div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <!--fechamento X--> <span aria-hidden="true">&times;</span>
+                            <!--/fechamento X-->
+                        </button>
+                    </div>
+
+                    <!--card Pop-Up-->
+
+                    <body class="estiloDoPopUp">
+                        <div class="containerPopUp">
+                            <div class="pt-0">
+                                <h1>Já tem uma conta?</h1>
+
+                                <!--Campo preenchimento usuário já cadastrado-->
+                                <div class="label-float">
+                                    <input [(ngModel)]='usuarioLogin.emailUsuario' type="text" id="email" placeholder="">
+                                    <label for="email">E-mail</label>
+                                </div>
+
+                                <div class="label-float">
+                                    <input [(ngModel)]='usuarioLogin.senhaUsuario' type="text" id="senha" placeholder="">
+                                    <label for="senha">Senha</label>
+                                </div>
+                                <!--Campo preenchimento usuário já cadastrado-->
+
+                                <!--Botão de Entrar-->
+                                <div class="justify-center">
+                                    <button (click)='entrar()' class="bt-entrar">Seja bem-vinde</button>
+                                </div>
+                                <!--/Botão de Entrar-->
+                                <div class="justify-center">
+                                    <hr>
+                                </div>
+
+                                <h1>Ainda não tem uma conta?</h1>
+
+                                <!--Botão de Cadastrar-->
+                                <div class="justify-center">
+                                    <button routerLink='/cadastrar' class="bt-entrar" >Venha para nossa Ecovila</button>
+                                </div>
+                                <!--Botão de Cadastrar-->
+
+                            </div>
+
                         </div>
             
          
-
-<!--card Pop-Up-->
-                <body class="estiloDoPopUp">
-                    <div class="containerPopUp">
-                        <div class="pt-0" >
-                          <h1>Já tem uma conta?</h1>
-
-                <!--Campo preenchimento usuário já cadastrado-->
-                          <div class="label-float">
-                              <input type="text" id="email" placeholder="" required>
-                              <label for="email">E-mail</label>
-                          </div>
-
-                          <div class="label-float">
-                            <input  type="password" id="senha" placeholder="" required>
-                            <label for="senha">Senha</label>
-                        </div>
-                <!--Campo preenchimento usuário já cadastrado-->
-                       
-                <!--Botão de Entrar-->
-                        <div class="justify-center">
-                            <button class="bt-entrar">Seja bem-vinde</button>
-                        </div>
-                <!--/Botão de Entrar-->
-                <div class="justify-center">
-                    <hr>
-                </div>
-
-                <h1>Ainda não tem uma conta?</h1>
-                
-                <!--Botão de Cadastrar-->
-                <div class="justify-center">
-                    <button class="bt-entrar">Venha para nossa Ecovila</button>
-                </div>
-                <!--Botão de Cadastrar-->
-                      
-                          </div>
+           </div>
                       </div>
                 </body>
     <!--/card Pop-Up-->

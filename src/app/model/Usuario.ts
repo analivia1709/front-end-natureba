@@ -5,7 +5,6 @@ export class Usuario{
     public nomeSocial: string;
     public nomeUsuario: string
     public nomeCompletoUsuario: string;
-    public dataAniversario: Date;
     public emailUsuario: string;
     public senhaUsuario: string;
     public contadorArvore: number;

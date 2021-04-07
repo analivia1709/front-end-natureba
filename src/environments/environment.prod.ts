@@ -5,7 +5,6 @@ export const environment = {
   nomeUsuario: '',
   nomeSocial: '',
   nomeCompletoUsuario: '',
-  dataAniversario: '',
   emailUsuario: '',
   senhaUsuario: '',
   contadorArvore: 0

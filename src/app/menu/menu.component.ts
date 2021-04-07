@@ -30,7 +30,6 @@ export class MenuComponent implements OnInit {
       environment.nomeCompletoUsuario = this.usuarioLogin.nomeCompletoUsuario
       environment.nomeUsuario = this.usuarioLogin.nomeUsuario
       environment.token = this.usuarioLogin.token
-      environment.dataAniversario = this.usuarioLogin.dataAniversario
       environment.contadorArvore = this.usuarioLogin.contadorArvore
       environment.senhaUsuario = this.usuarioLogin.senhaUsuario
 

@@ -17,7 +17,9 @@ const routes: Routes = [
   {path: '', redirectTo: 'paginaInicial', pathMatch: 'full'},
 
   {path:'alterarCadastro', component: AlterarcadastroComponent},
-  {path:'alterarProduto', component: AlterarprodutoComponent},
+  {path: 'alterarCadastro/:id', component: AlterarcadastroComponent},
+
+  {path: 'alterarProduto/:idProduto/:cpf', component: AlterarprodutoComponent},
   {path: 'cadastrar', component: CadastrarComponent},
   {path: 'comoFunciona', component: ComoFuncionaComponent},
   {path: 'paginaInicial', component: CorpoHomeComponent},

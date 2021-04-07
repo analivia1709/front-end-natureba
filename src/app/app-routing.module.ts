@@ -14,7 +14,7 @@ import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
 import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'corpoHome', pathMatch: 'full'},
+  {path: '', redirectTo: 'paginaInicial', pathMatch: 'full'},
 
   {path:'alterarCadastro', component: AlterarcadastroComponent},
   {path:'alterarProduto', component: AlterarprodutoComponent},

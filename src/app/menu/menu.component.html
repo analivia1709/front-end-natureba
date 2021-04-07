@@ -64,7 +64,7 @@
 <!-- IconeUser-->
 <div class="d-flex justify-content-end pr-4">
     <button class="btn btn-floating " data-toggle="modal" data-target="#ExemploModalCentralizado">
-        <img  src="https://i.imgur.com/lAnmYcd.png" width="40" height="40" alt="icone do login">
+        <img src="https://i.imgur.com/lAnmYcd.png" width="40" height="40" alt="icone do login">
     </button>
 </div>
 <!-- /IconeUser-->
@@ -125,11 +125,11 @@
 
 <!--/menuProdutos-->
 <div class="container-fluid tamanho d-flex justify-content-end">
-    
+
 
     <!-- continuação para o modal do Botão para acionar o pop up de Login-->
-    
-    <div class="modal fade" id="ExemploModalCentralizado"> 
+
+    <div class="modal fade" id="ExemploModalCentralizado">
         <div class="modal-dialog">
 
             <div class="modal-content">
@@ -150,12 +150,14 @@
 
                                 <!--Campo preenchimento usuário já cadastrado-->
                                 <div class="label-float">
-                                    <input [(ngModel)]='usuarioLogin.emailUsuario' type="text" id="email" placeholder="">
+                                    <input [(ngModel)]='usuarioLogin.emailUsuario' type="text" id="email"
+                                        placeholder="">
                                     <label for="email">E-mail</label>
                                 </div>
 
                                 <div class="label-float">
-                                    <input [(ngModel)]='usuarioLogin.senhaUsuario' type="text" id="senha" placeholder="">
+                                    <input [(ngModel)]='usuarioLogin.senhaUsuario' type="text" id="senha"
+                                        placeholder="">
                                     <label for="senha">Senha</label>
                                 </div>
                                 <!--Campo preenchimento usuário já cadastrado-->
@@ -173,22 +175,19 @@
 
                                 <!--Botão de Cadastrar-->
                                 <div class="justify-center">
-                                    <button routerLink='/cadastrar' class="bt-entrar" >Venha para nossa Ecovila</button>
+                                    <button routerLink='/cadastrar' class="bt-entrar">Venha para nossa Ecovila</button>
                                 </div>
                                 <!--Botão de Cadastrar-->
 
                             </div>
-
                         </div>
-            
-         
-           </div>
-                      </div>
-                </body>
-    <!--/card Pop-Up-->
+                    </body>
 
                 </div>
             </div>
+
+            <!--/card Pop-Up-->
+
         </div>
     </div>
 </div>

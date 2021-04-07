@@ -23,9 +23,9 @@ const routes: Routes = [
   {path: 'paginaInicial', component: CorpoHomeComponent},
   {path: 'criarProduto', component: CriarprodutoComponent},
   {path: 'nossoTime', component: NossoTimeComponent},
-  {path: 'telaFavoritos', component: TelaFavoritosComponent},
-  {path: 'telaProdutos', component: TelaProdutosComponent},
-  {path: 'telaUsuario', component: TelaUsuarioComponent},
+  {path: 'meusFavoritos', component: TelaFavoritosComponent},
+  {path: 'meusProdutos', component: TelaProdutosComponent},
+  {path: 'minhaPagina', component: TelaUsuarioComponent},
   {path: 'minhasCompras', component: MinhasComprasComponent},
   {path: 'logado', component: MenuLogadoComponent}
   

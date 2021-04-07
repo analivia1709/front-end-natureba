@@ -29,8 +29,8 @@ const routes: Routes = [
   {path: 'meusProdutos', component: TelaProdutosComponent},
   {path: 'minhaPagina', component: TelaUsuarioComponent},
   {path: 'minhasCompras', component: MinhasComprasComponent},
-  {path: 'logado', component: MenuLogadoComponent}
-  
+  {path: 'logado', component: MenuLogadoComponent},
+  {path: 'usuario', component:TelaUsuarioComponent}
 ];
 
 @NgModule({

@@ -1,6 +1,8 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.prod';
+import { Produto } from '../model/Produto';
 import { Usuario } from '../model/Usuario';
 import { UsuarioLogin } from '../model/UsuarioLogin';
 
@@ -10,14 +12,22 @@ import { UsuarioLogin } from '../model/UsuarioLogin';
 export class AuthService {
 
   constructor(private http: HttpClient) { 
-
   }
 
-  entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
+  entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
     return this.http.post<UsuarioLogin>('http://localhost:8080/usuario/logar', usuarioLogin)
   }
 
-  cadastrar(usuario: Usuario){
+  cadastrar(usuario: Usuario) {
     return this.http.post<Usuario>('http://localhost:8080/usuario/cadastrar', usuario)
+  }
+
+  logado() {
+    let ok: boolean = false
+
+    if(environment.token != '') {
+      ok = true
+    }
+    return ok
   }
 }

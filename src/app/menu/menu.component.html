@@ -5,42 +5,42 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class=" text-white nav-link" href="#como">Como Funciona? <span class="sr-only">(current)</span></a>
+    <a class=" text-white nav-link" routerLink='comoFunciona'>Como Funciona? <span class="sr-only">(current)</span></a>
     <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
         <ul class=" navbar-nav d-flex espaco align-items-center ">
             <li class="nav-item active">
             </li>
 
             <li class="nav-item">
-                <a class=" text-white nav-link" href="#sobre">Sobre nós</a>
+                <a class=" text-white nav-link" routerLink='sobreNos'>Sobre nós</a>
             </li>
 
             <li class="nav-item">
-                <a class=" text-white nav-link" href="#time">Nosso time</a>
+                <a class=" text-white nav-link" routerLink='nossoTime'>Nosso time</a>
             </li>
 
             <li class="nav-item">
-                <a class=" text-white nav-link" href="#contato">Contato</a>
+                <a class=" text-white nav-link" routerLink='contato'>Contato</a>
             </li>
         </ul>
 
         <ul class=" navbar-nav ml-auto d-flex align-items-center">
 
             <li>
-                <a href="https://www.facebook.com/" target="_blank" class="icoFacebook">
-                    <i class=" fa fa-facebook-square" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/" target="_blank" class="icoFacebook" alt='Icone do Facebook'>
+                    <img class="fa" src="https://i.imgur.com/uHVSXNv.png" width="28px" height="28px">
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" class="icoInstagram" alt='Icone do instagram'>
+                    <img class="fa" src="https://i.imgur.com/52SqSWU.png" width="28px" height="28px">
                 </a>
             </li>
 
             <li>
-                <a href="https://www.instagram.com/" target="_blank" class="icoInstagram">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.twitter.com/" target="_blank" class="icoTwitter">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <a href="https://www.twitter.com/" target="_blank" class="icoTwitter" alt='Icone do twitter'>
+                    <img class="fa" src="https://i.imgur.com/ycjJ7yp.png" width="28px" height="28px">
                 </a>
             </li>
 
@@ -55,37 +55,22 @@
 <!--logo-->
 
 <div class=" d-flex justify-content-center">
-    <img src="https://i.imgur.com/qK0vDVm.jpg" width="250" height="260" alt="logotipo">
-
+    <a routerLink='paginaInicial' class="icoInstagram" alt='Logo Natureba'>
+        <img src="https://i.imgur.com/qK0vDVm.jpg" width="250" height="260" alt="Logotipo Natureba">
+    </a>
 </div>
 
 <!--/logo-->
 
 <!-- IconeUser-->
-
-<div class="container-fluid tamanho d-flex justify-content-end">
-    <a href="https://www.twitter.com/" target="_blank" class="icoUser">
-        <i class="fa fa-user-o" aria-hidden="true"></i>
-    </a>
-    <div class="pl-4 pr-3">
-        <a href="https://www.twitter.com/" target="_blank" class="icoHeart">
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-        </a>
-    </div>
-
+<div class="d-flex justify-content-end pr-4">
+    <button class="btn btn-floating " data-toggle="modal" data-target="#ExemploModalCentralizado">
+        <img src="https://i.imgur.com/lAnmYcd.png" width="40" height="40" alt="icone do login">
+    </button>
 </div>
-
-
-
 <!-- /IconeUser-->
 
 <!-- menuProdutos-->
-
-<div class=" container-fluid d-flex justify-content-center">
-    
-</div>
-
-
 
 <nav class="navbar navbar-expand-lg font-weight-bold navbar-light m-0" style="background-color: white">
 
@@ -97,16 +82,13 @@
     <div class=" collapse navbar-collapse " id="conteudoNavbarSuportado">
         <ul class="navbar-nav cor altera-menu posicao ">
 
-
-            
-
             <li class="nav-item">
                 <a class="  nav-link" href="#ofertas">Baratinhos</a>
             </li>
 
 
             <li class="nav-item">
-                <a class="  nav-link" href="#maquiagem">Maquiagem</a>
+                <a class="nav-link" href="#maquiagem">Maquiagem</a>
             </li>
 
             <li class="nav-item">
@@ -143,3 +125,70 @@
 </nav>
 
 <!--/menuProdutos-->
+<div class="container-fluid tamanho d-flex justify-content-end">
+
+
+    <!-- continuação para o modal do Botão para acionar o pop up de Login-->
+
+    <div class="modal fade" id="ExemploModalCentralizado">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <!--fechamento X--> <span aria-hidden="true">&times;</span>
+                            <!--/fechamento X-->
+                        </button>
+                    </div>
+
+                    <!--card Pop-Up-->
+
+                    <body class="estiloDoPopUp">
+                        <div class="containerPopUp">
+                            <div class="pt-0">
+                                <h1>Já tem uma conta?</h1>
+
+                                <!--Campo preenchimento usuário já cadastrado-->
+                                <div class="label-float">
+                                    <input [(ngModel)]='usuarioLogin.emailUsuario' type="text" id="email"
+                                        placeholder="">
+                                    <label for="email">E-mail</label>
+                                </div>
+
+                                <div class="label-float">
+                                    <input [(ngModel)]='usuarioLogin.senhaUsuario' type="text" id="senha"
+                                        placeholder="">
+                                    <label for="senha">Senha</label>
+                                </div>
+                                <!--Campo preenchimento usuário já cadastrado-->
+
+                                <!--Botão de Entrar-->
+                                <div class="justify-center">
+                                    <button (click)='entrar()'  class="bt-entrar close" >Seja bem-vinde</button>
+                                </div>
+                                <!--/Botão de Entrar-->
+                                <div class="justify-center">
+                                    <hr>
+                                </div>
+
+                                <h1>Ainda não tem uma conta?</h1>
+
+                                <!--Botão de Cadastrar-->
+                                <div class="justify-center">
+                                    <button routerLink='/cadastrar' class="bt-entrar close" data-dismiss="modal">Venha para nossa Ecovila</button>
+                                </div>
+                                <!--Botão de Cadastrar-->
+
+                            </div>
+                        </div>
+                    </body>
+
+                </div>
+            </div>
+
+            <!--/card Pop-Up-->
+
+        </div>
+    </div>
+</div>

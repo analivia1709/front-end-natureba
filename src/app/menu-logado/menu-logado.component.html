@@ -5,42 +5,42 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class=" text-white nav-link" href="#como">Como Funciona? <span class="sr-only">(current)</span></a>
+    <a class=" text-white nav-link" routerLink='comoFunciona'>Como Funciona? <span class="sr-only">(current)</span></a>
     <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
         <ul class=" navbar-nav d-flex espaco align-items-center ">
             <li class="nav-item active">
             </li>
 
             <li class="nav-item">
-                <a class=" text-white nav-link" href="#sobre">Sobre nós</a>
+                <a class=" text-white nav-link" routerLink='sobreNos'>Sobre nós</a>
             </li>
 
             <li class="nav-item">
-                <a class=" text-white nav-link" href="#time">Nosso time</a>
+                <a class=" text-white nav-link" routerLink='nossoTime'>Nosso time</a>
             </li>
 
             <li class="nav-item">
-                <a class=" text-white nav-link" href="#contato">Contato</a>
+                <a class=" text-white nav-link" routerLink='contato'>Contato</a>
             </li>
         </ul>
 
         <ul class=" navbar-nav ml-auto d-flex align-items-center">
 
             <li>
-                <a href="https://www.facebook.com/" target="_blank" class="icoFacebook">
-                    <i class=" fa fa-facebook-square" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/" target="_blank" class="icoFacebook" alt='Icone do Facebook'>
+                    <img class="fa" src="https://i.imgur.com/uHVSXNv.png" width="28px" height="28px">
+                </a>
+            </li>
+            
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" class="icoInstagram" alt='Icone do instagram'>
+                    <img class="fa" src="https://i.imgur.com/52SqSWU.png" width="28px" height="28px">
                 </a>
             </li>
 
             <li>
-                <a href="https://www.instagram.com/" target="_blank" class="icoInstagram">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.twitter.com/" target="_blank" class="icoTwitter">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <a href="https://www.twitter.com/" target="_blank" class="icoTwitter" alt='Icone do twitter'>
+                    <img class="fa" src="https://i.imgur.com/ycjJ7yp.png" width="28px" height="28px">
                 </a>
             </li>
 
@@ -55,14 +55,19 @@
 <!--logo-->
 
 <div class=" d-flex justify-content-center">
-    <img src="https://i.imgur.com/qK0vDVm.jpg" width="250" height="260" alt="logotipo">
-
+    <a routerLink='paginaInicial' class="icoInstagram" alt='Logo Natureba'>
+        <img src="https://i.imgur.com/qK0vDVm.jpg" width="250" height="260" alt="Logotipo Natureba">
+    </a>
 </div>
 
 <!--/logo-->
 
 <!-- IconeUser-->
-
+<div class="d-flex justify-content-end pr-4">
+    <button class="btn btn-floating " data-toggle="modal" data-target="#ExemploModalCentralizado">
+        <img src="https://i.imgur.com/lAnmYcd.png" width="40" height="40" alt="icone do login">
+    </button>
+</div>
 <!-- /IconeUser-->
 
 <!-- menuProdutos-->
@@ -77,16 +82,13 @@
     <div class=" collapse navbar-collapse " id="conteudoNavbarSuportado">
         <ul class="navbar-nav cor altera-menu posicao ">
 
-
-
-
             <li class="nav-item">
                 <a class="  nav-link" href="#ofertas">Baratinhos</a>
             </li>
 
 
             <li class="nav-item">
-                <a class="  nav-link" href="#maquiagem">Maquiagem</a>
+                <a class="nav-link" href="#maquiagem">Maquiagem</a>
             </li>
 
             <li class="nav-item">
@@ -121,19 +123,19 @@
     </div>
 
 </nav>
-<hr>
+
 <!--/menuProdutos-->
 <div class="container-fluid tamanho d-flex justify-content-end">
     <ul class="nav nav-tabs">
   
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle adapt" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Olá, nome do usuario</a>
+          <a class="nav-link dropdown-toggle adapt" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Olá, {{nomeUsuario}}</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Meu perfil</a>
-            <a class="dropdown-item" href="#">Minhas compras</a>
-            <a class="dropdown-item" href="#">Meus favoritos</a>
-            <a class="dropdown-item" href="#">Meus produtos</a>
-            <a class="dropdown-item" href="#">Sair</a>
+            <a class="dropdown-item" routerLink='meuPerfil'>Meu perfil</a>
+            <a class="dropdown-item" routerLink='meuPerfil/MinhasCompras'>Minhas compras</a>
+            <a class="dropdown-item" routerLink='meuPerfil/MeusFavoritos'>Meus favoritos</a>
+            <a class="dropdown-item" routerLink='meuPerfil/MeusProdutos'>Meus produtos</a>
+            <a class="dropdown-item" (click)='sair()'>Sair</a>
           </div>
         </li>
         

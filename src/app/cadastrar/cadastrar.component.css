@@ -120,8 +120,8 @@ body {
   padding: 60px;
   border-radius: 4%;  
   width: 694px; /*largura*/
-  Height: 800px;
-  left: 374px; /*movimento*/
+  Height: 750px;
+  left: 200px; /*movimento*/
   top: 100px; /*distacia do topo*/ 
   display:flex;
   

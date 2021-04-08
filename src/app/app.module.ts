@@ -20,7 +20,7 @@ import { CorpoHomeComponent } from './corpo-home/corpo-home.component';
 import { MinhasComprasComponent } from './minhas-compras/minhas-compras.component';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { NossoTimeComponent } from './nosso-time/nosso-time.component';
-import { PopUpLoginComponent } from './pop-up-login/pop-up-login.component';
+import { ContatoComponent } from './contato/contato.component';
 import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 import { PaginaProdutoComponent } from './pagina-produto/pagina-produto.component';
 import { PaginaProdutoVendedorComponent } from './pagina-produto-vendedor/pagina-produto-vendedor.component';
@@ -45,12 +45,11 @@ import { PaginaProdutoVendedorComponent } from './pagina-produto-vendedor/pagina
     MinhasComprasComponent,
     CategoriasComponent,
     NossoTimeComponent,
-    PopUpLoginComponent,
+    ContatoComponent,
     MenuLogadoComponent,
     PaginaProdutoComponent,
     PaginaProdutoVendedorComponent
  ],
-
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -23,6 +23,11 @@
             </div>
 
             <div class="label-float d-flex justify-content-center">
+                <input [(ngModel)]='usuario.nomeUsuario' type="text" id="nomeSocial" placeholder="" required>
+                <label for="nomeSocial">Nome de usuário*</label>
+            </div>
+
+            <div class="label-float d-flex justify-content-center">
                 <input [(ngModel)]='usuario.cpf'type="text" id="cpf" placeholder="" required>
                 <label for="cpf">CPF*</label>
             </div>

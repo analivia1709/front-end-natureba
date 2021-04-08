@@ -129,13 +129,13 @@
     <ul class="nav nav-tabs">
   
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle adapt" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Olá, nome do usuario</a>
+          <a class="nav-link dropdown-toggle adapt" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Olá, {{nomeUsuario}}</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Meu perfil</a>
-            <a class="dropdown-item" href="#">Minhas compras</a>
-            <a class="dropdown-item" href="#">Meus favoritos</a>
-            <a class="dropdown-item" href="#">Meus produtos</a>
-            <a class="dropdown-item" href="#">Sair</a>
+            <a class="dropdown-item" routerLink='meuPerfil'>Meu perfil</a>
+            <a class="dropdown-item" routerLink='meuPerfil/MinhasCompras'>Minhas compras</a>
+            <a class="dropdown-item" routerLink='meuPerfil/MeusFavoritos'>Meus favoritos</a>
+            <a class="dropdown-item" routerLink='meuPerfil/MeusProdutos'>Meus produtos</a>
+            <a class="dropdown-item" (click)='sair()'>Sair</a>
           </div>
         </li>
         

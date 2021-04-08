@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
+import { Usuario } from '../model/Usuario';
 import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
@@ -12,11 +13,14 @@ import { ProdutoService } from '../service/produto.service';
   styleUrls: ['./criarproduto.component.css']
 })
 export class CriarprodutoComponent implements OnInit {
-
-  
   produto: Produto = new Produto
+
+  categoria: Categoria = new Categoria()
   listaCategorias: Categoria[]
-  
+  idCategoria: number
+
+  usuario: Usuario = new Usuario()
+  idUsuario = environment.cpf
 
   constructor(private produtoService: ProdutoService, 
     private categoriaService: CategoriaService, 
@@ -33,11 +37,23 @@ export class CriarprodutoComponent implements OnInit {
     })
   }
 
+  findByIdCategoria() {
+    this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
+      this.categoria
+    })
+  }
+
   criarProduto() {
+    this.categoria.idCategoria = this.idCategoria
+    this.produto.categoria = this.categoria
+
+    this.usuario.cpf = this.idUsuario
+    this.produto.usuario = this.usuario
+
     this.produtoService.criarProdutoPorUsuario(this.produto, environment.cpf).subscribe((resp: Produto) => {
       this.produto = resp
-      this.router.navigate(['/meusProdutos'])
       alert('Parabéns pelo novo produto!')
+      this.router.navigate(['/meusProdutos'])
     })
   }
 }

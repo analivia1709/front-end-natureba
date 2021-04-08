@@ -19,7 +19,7 @@ export class ProdutoService {
     return this.http.get<Produto[]>('http://localhost:8080/produto', this.token)
   }
 
-  getById(idProduto: number): Observable<Produto> {
+  getByIdProduto(idProduto: number): Observable<Produto> {
     return this.http.get<Produto>(`http://localhost:8080/${idProduto}`, this.token)
   }
 
@@ -33,6 +33,10 @@ export class ProdutoService {
 
   criarProdutoPorUsuario(produto: Produto, cpf: string): Observable<Produto> {
     return this.http.post<Produto>(`http://localhost:8080/usuario/produto/novo/${cpf}`, produto, this.token)
+  }
+
+  comprar(produto: Produto, idProduto: number, cpf: string): Observable<Produto> {
+    return this.http.post<Produto>(`http://localhost:8080/usuario/produto/compra/${idProduto}/${cpf}`, produto, this.token)
   }
 
   alterarProduto(produto: Produto, idProduto: number, cpf: string): Observable<Produto> {

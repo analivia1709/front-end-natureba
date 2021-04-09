@@ -53,7 +53,7 @@ export class CriarprodutoComponent implements OnInit {
     this.produtoService.criarProdutoPorUsuario(this.produto, environment.cpf).subscribe((resp: Produto) => {
       this.produto = resp
       alert('Parabéns pelo novo produto!')
-      this.router.navigate(['/meusProdutos'])
+      this.router.navigate(['/meuPerfil/meusProdutos'])
     })
   }
 }

@@ -46,7 +46,7 @@
 
                 <div class="col mx-auto text-center">
 
-                    <h2 class="cor card-title">Você plantou x árvores</h2>
+                    <h2 class="cor card-title">Você plantou {{usuario.contadorArvore}} árvores!</h2>
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         <p class="card-text">Seu celular mudou? Altere seus dados para segurança durante suas compras e/ou vendas.</p>
-                        <a class="btn btn-primary" routerLink="alterarCadastro">Alterar cadastro</a>
+                        <a class="btn btn-primary" [routerLink]="['alterarCadastro', idUsuario ]">Alterar cadastro</a>
                     </div>
                 </div>
             </div>

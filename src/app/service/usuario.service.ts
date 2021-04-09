@@ -19,7 +19,7 @@ export class UsuarioService {
     return this.http.get<Usuario[]>('http://localhost:8080/produto', this.token)
   }
 
-  getById(cpf: string): Observable<Usuario> {
+  getBycpf(cpf: string): Observable<Usuario> {
     return this.http.get<Usuario>(`http://localhost:8080/${cpf}`, this.token)
   }
 

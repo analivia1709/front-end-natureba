@@ -9,7 +9,11 @@ import { CriarprodutoComponent } from './criarproduto/criarproduto.component';
 import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 import { MinhasComprasComponent } from './minhas-compras/minhas-compras.component';
 import { NossoTimeComponent } from './nosso-time/nosso-time.component';
+
 import { PaginaProdutoVendedorComponent } from './pagina-produto-vendedor/pagina-produto-vendedor.component';
+
+import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+
 import { TelaFavoritosComponent } from './tela-favoritos/tela-favoritos.component';
 import { TelaProdutosComponent } from './tela-produtos/tela-produtos.component';
 import { TelaUsuarioComponent } from './tela-usuario/tela-usuario.component';
@@ -32,7 +36,8 @@ const routes: Routes = [
   {path: 'meuPerfil/minhasCompras', component: MinhasComprasComponent},
   {path: 'logado', component: MenuLogadoComponent},
   {path: 'meuPerfil', component:TelaUsuarioComponent},
-  {path: 'menuLogado', component:MenuLogadoComponent}
+  {path: 'menuLogado', component:MenuLogadoComponent},
+  {path: 'quemSomos', component: QuemSomosComponent}
 ];
 
 @NgModule({
